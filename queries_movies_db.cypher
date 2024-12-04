@@ -65,4 +65,4 @@ match(n:Person)-[:ACTED_IN]-(m:Movie), (n2:Person)-[:ACTED_IN]-(m) return n,n2
 match(n:Person)-[:ACTED_IN]-(m:Movie) with n.name as actor, collect(m.title) as peliculas return actor, peliculas
 
 19. mostrar dos actores buscandolos por los nombres 
-match(n:Person {name:'Mauricio'}) return n as actor union match(m:Person {name:'Keanu Reeves'}) return m as actor    
+match(n:Person {name:'Mauricio'}) return n as actor union match(m:Person {name:'Keanu Reeves'}) return m as actor
